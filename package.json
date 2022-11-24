@@ -7,7 +7,8 @@
     "build": "webpack --config webpack.config.production.js",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
     "test": "jest",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -41,10 +42,5 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
   }
 }
